@@ -28,7 +28,7 @@ attr_reader :id
     sql = <<-SQL
     INSERT INTO students (name, grade) VALUES (?,?)
     SQL
-    @id = DB[:conn].execute(sql,self.name,self.grade)
+    DB[:conn].execute(sql,self.name,self.grade)
   end
 
 
