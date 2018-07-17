@@ -34,6 +34,7 @@ attr_reader :id
   end
 
   def self.create(attributes)
+    binding.pry
   student = Student.new(attributes)
 
   end
