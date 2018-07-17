@@ -18,5 +18,5 @@ class Student
 
 
 
-  
+
 end
