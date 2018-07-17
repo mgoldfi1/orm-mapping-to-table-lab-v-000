@@ -19,6 +19,7 @@ attr_accessor :name, :grade
   end
 
   def self.drop_table
+  DB[:conn].execute("DROP TABLE students;")
   end
 
 
