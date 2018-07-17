@@ -34,9 +34,8 @@ attr_reader :id
   end
 
   def self.create(attributes)
-    binding.pry
   student = Student.new(attributes)
-  attributes.each {|k,v| self.send(("#{k}="), v)}
+
   end
 
 
