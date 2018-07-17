@@ -32,6 +32,10 @@ attr_reader :id
     @id = DB[:conn].execute("SELECT last_insert_rowid() FROM students")[0][0]
   end
 
+  def self.create(attributes)
+    Student.new(attributes.each {|k,v| self.send(("#{k}="), v)}).save
+  end
+
 
 
 
