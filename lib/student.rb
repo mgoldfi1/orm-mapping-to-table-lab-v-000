@@ -13,7 +13,7 @@ attr_accessor :name, :grade
       name TEXT,
       grade TEXT
     )
-            SQL
+    SQL
     DB[:conn].execute(sql)
   end
 
