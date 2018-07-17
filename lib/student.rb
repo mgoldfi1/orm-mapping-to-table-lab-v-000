@@ -33,7 +33,7 @@ attr_reader :id
   end
 
   def self.create(attributes)
-  student = Student.new(name:,grade:)
+  student = Student.new(attributes)
   attributes.each {|k,v| self.send(("#{k}="), v)}
   end
 
