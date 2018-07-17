@@ -34,8 +34,7 @@ attr_reader :id
   end
 
   def self.create(attributes)
-    binding.pry
-  student = Student.new(attributes)
+  student = Student.new(attributes[:name],attributes[:grade])
 
   end
 
